@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workfission</title>
+  <link rel="stylesheet" href="webpage.css">
+</head>
+
+<style>
+    .services {
+        display: block !important; /* Forces browser to render immediately */
+    }
+</style>
+
+<body>
+  <nav>
+    <div class="logo">
+        <img src="Images/Work Fission.svg" alt="Work Fission Logo" class="logo">
+
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Simplify Workforce Management –<br>Hire, Schedule, and Pay with Ease</h1>
+      <p>We make it faster and easier to find workers, manage shifts, and process payroll—so you can focus on growing your business.</p>
+      <button class="demo" id="bookDemoBtn">Book Demo</button>
+    </div>
+
+    <div class="hero-image">
+      <img src="Images/business2.jpg" alt="Business Collaboration">
+    </div>
+  </section>
+
+  <!-- Booking Modal (Initially Hidden) -->
+  <div id="bookingModal" class="modal">
+    <span class="close" id="closeModal">&times;</span>
+    <div class="modal-content">
+      <iframe id="bookingIframe" src="" width="100%" height="600" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <section class="services fade-in">
+    <div class="service-text">
+      <h2 class="section-title">Services</h2>
+      <p class="section-description">Explore our comprehensive package tailored for your management needs. Our services include strategic Hiring solutions, efficient Scheduling management, and precise Payroll processing.</p>
+    </div>
+    
+    <div class="service-container">
+      <div class="service">
+        <img src="Images/hiring.jpg" alt="Hiring" loading="eager">
+        <h3>Hiring</h3>
+        <p>Skip the long hiring process—post jobs, review applicants, and hire instantly. Get reliable workers when you need them, without the hassle. Save time, reduce costs, and keep your business running smoothly.</p>
+      </div>
+      <div class="service">
+        <img src="Images/scheduling.jpg" alt="Scheduling" loading="eager">
+        <h3>Scheduling</h3>
+        <p>No more scheduling headaches! Assign shifts, manage availability, and prevent conflicts with ease. Keep your team organized and your business running smoothly and efficiently.</p>
+      </div>
+      <div class="service">
+        <img src="Images/payroll.jpg" alt="Payroll" loading="eager">
+        <h3>Payroll</h3>
+        <p>Pay your team on time, every time—without the stress. Automate payments, track earnings, and eliminate errors, so you can focus on growing your business.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="about-image">
+      <img src="Images/about2.jpg" alt="Team Working" loading="eager">
+    </div>
+    <div class="about-content">
+      <h2>ABOUT WORKFISSION</h2>
+      <p>At Workfission, we are committed to simplifying the hiring process, optimizing scheduling, and ensuring accurate payroll management for businesses across various industries.</p>
+      <p>Our platform offers flexible job opportunities and ensures quick payments for job seekers and gig workers. We strive to address workforce management challenges, enabling businesses to operate efficiently while fostering job creation opportunities.</p>
+      <button class="discover-btn" id="discoverMoreBtn">Discover More</button>
+    </div>
+  </section>
+
+<footer class="footer">
+    <div class="footer-left">
+        <img src="Images/Work Fission.svg" alt="WorkFission Logo" class="footer-logo">
+    </div>
+
+    <div class="footer-center">
+        <p>© 2024 WorkFission. All rights reserved.</p>
+    </div>
+
+    <div class="footer-right">
+        <p><strong>Contact Us:</strong></p>
+        <p><a href="mailto:yourname@workfission.com">chandra@workfission.com</a></p>
+    </div>
+</footer>
+
+  <script src="webpage.js" defer></script>
+</body>
+</html>

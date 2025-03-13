@@ -1,0 +1,339 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  /* Navbar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #162C44;
+    color: #ffffff;
+  }
+  
+  .logo {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  
+.fade-in {
+    opacity: 0;
+    transform: translateY(10px); /* Slight movement */
+    transition: opacity 0.4s ease-in, transform 0.4s ease-in; /* Faster fade-in */
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 100px;
+    background-color: #F4F4F4;
+    gap: 50px;
+  }
+  
+  .hero-text {
+    flex: 1;
+  }
+  
+  .hero-text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .demo {
+    background-color: #FEBE10;
+    color: #162C44;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  
+  .demo:hover {
+    background-color: #E0A800;
+  }
+  
+  /* Hero Image */
+  .hero-image {
+    flex: 1;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 100px 100px;
+    background-color: #1F1F1F;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .service-text {
+    max-width: 600px;
+    text-align: left;
+    margin-bottom: 100px;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .section-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+  
+  .service-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+  }
+  
+  .service {
+    text-align: center;
+    max-width: 350px;
+  }
+  
+  .service img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .service h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  
+  .service p {
+    font-size: 16px;
+    color: #d3d3d3;
+    line-height: 1.6;
+  }
+  
+  /* About Section */
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 100px;
+    background-color: #F4F4F4;
+    gap: 50px;
+  }
+  
+  .about-image {
+    flex: 1;
+  }
+  
+  .about-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .about-content {
+    flex: 1;
+  }
+  
+  .about-content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .about-content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .discover-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s ease;
+  }
+  
+  .discover-btn:hover {
+    background-color: #555;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #003B5C; /* Dark background */
+    color: white;
+    padding: 20px 50px;
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    
+}
+
+.footer-left {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+.footer-right {
+    text-align: right;
+    
+}
+
+.footer-right p {
+  margin:  0; /* Ensures proper spacing for Contact Us */
+}
+
+.footer-right p:first-child {
+  margin-bottom: 5px; /* Moves "Contact Us" slightly higher */
+  margin-right: 108px;
+}
+
+.footer-right p:last-child {
+  margin-bottom: 30px; /* Moves "Contact Us" slightly higher */
+}
+
+
+.footer-center {
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%; /* Make sure it moves to the bottom */
+}
+
+.footer-center p {
+  margin-bottom: -20px;
+  padding-bottom: 15px; /* Moves © 2024 WorkFission downward */
+}
+
+.footer-logo {
+    width: 200px; /* Adjust logo size */
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+  
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #1F1F1F;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 900px;
+    height: 650px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.modal-content iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    font-weight: bold;
+    border: none;
+}
+
+.close:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes highlightEffect {
+    0% {
+        transform: scale(1);
+        background-color: #E0A800;
+    }
+    50% {
+        transform: scale(1.2);
+        background-color: #FFD700;
+    }
+    100% {
+        transform: scale(1);
+        background-color: #FEBE10;
+    }
+}
+
+.highlight {
+    animation: highlightEffect 0.8s ease-in-out;
+}
